@@ -14,13 +14,14 @@ public class Pelicula {
 	private String fotografia;
 	private String reparto;
 	private String productora;
+	private String genero;
 	private String sinopsis;
 	private String premios;
 	private String criticas;
 	
 	public Pelicula(int idPelicula, String tituloPaisPelicula, String tituloOriginal, int anioPelicula, int duracion,
 			String pais, String director, String guion, String musica, String fotografia, String reparto,
-			String productora, String sinopsis, String premios, String criticas) {
+			String productora, String genero, String sinopsis, String premios, String criticas) {
 		super();
 		this.idPelicula = idPelicula;
 		this.tituloPaisPelicula = tituloPaisPelicula;
@@ -34,9 +35,18 @@ public class Pelicula {
 		this.fotografia = fotografia;
 		this.reparto = reparto;
 		this.productora = productora;
+		this.genero = genero;
 		this.sinopsis = sinopsis;
 		this.premios = premios;
 		this.criticas = criticas;
+	}
+
+	public String getGenero() {
+		return genero;
+	}
+
+	public void setGenero(String genero) {
+		this.genero = genero;
 	}
 
 	public Pelicula(int idPelicula) {
