@@ -1,8 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+  <%@import page="beans.*" %>
+  <%@import page="modelo.*" %>
     <%
+    ModeloPelicula modeloPelicula = new ModeloPelicula();
     //peliculak lortu
-    
+    ArrayList<Pelicula> peliculas =
     %>
 <!DOCTYPE html>
 <html lang="en">
@@ -92,7 +95,7 @@
       <h2>Películas</h2>
       <hr>
       
-    
+    <% %>
       <a title="" href="fichaPelicula.jsp?id="> <img src="img/tapas/prometheus.jpg"  alt=""/></a>
        </br>
        
