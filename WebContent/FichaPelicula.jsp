@@ -6,10 +6,14 @@
 <%@ page import="modelo.*" %>
 <%
 //Parametroak jaso
+int id = Integer.parseInt.getParameter("id");
 //id
 
-
 //idarekin pelicula lortu modeloari eskatuta
+ModeloPelicula modeloPelicula = new ModeloPelicula();
+
+modeloPelicula.selectPorId("id");
+
 
 %>
 
