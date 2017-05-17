@@ -1,18 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-
-<%@ page import="java.sql.*" %>
-<%@ page import="Beans.*" %>
-<%@ page import="modelo.*" %>
-<%
-//Parametroak jaso
-//id
-
-
-//idarekin pelicula lortu modeloari eskatuta
-
-%>
-
+    <%
+    //peliculak lortu
+    
+    %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -90,32 +81,22 @@
     </div>
   </div>
 </nav>
- 
-<div class="container-fluid text-center"> 
+  
+<div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
       <p><a href="#">Iniciar Sesión</a></p>
       <p><a href="#">Registrarse</a></p>
     </div>
     <div class="col-sm-8 text-left"> 
-    <form action="FichaPelicula.jsp" method="post">
-		<input type="text" name="nombre" id="nombre" /> <br>
-		Título Original:  <%= pelicula.getTitulo() %>  <input type="text" value="<%= %>" name="titulo_original" id="Título Original" /> <br>
-		Año: <input type="text" name="Año" id="Año" /> <br>
-		Duración: <input type="text" name="Duración" id="Duración" /> <br>
-		País: <input type="text" name="País" id="País" /> <br>
-		Director: <input type="text" name="Director" id="Director" /> <br>
-		Guión: <input type="text" name="Guión" id="Guión" /> <br>
-		Fotografía: <input type="text" name="Fotografía" id="Fotografía" /> <br> 
-		Reparto: <input type="text" name="Reparto" id="Reparto" /> <br>
-		Productora: <input type="text" name="Productora" id="Productora" /> <br>
-		Genero: <input type="text" name="Genero" id="Genero" /> <br>
-		Sinopsis: <input type="text" name="Sinopsis" id="Sinopsis" /> <br>
-		Premios: <input type="text" name="Premios" id="Premios" /> <br>
-		Críticas: <input type="text" name="Críticas" id="Críticas" /> <br>
-		
-	</form>
-    </div>
+      <h2>Películas</h2>
+      <hr>
+      
+    
+      <a title="" href="fichaPelicula.jsp?id="> <img src="img/tapas/prometheus.jpg"  alt=""/></a>
+       </br>
+       
+       </div>
     <div class="col-sm-2 sidenav">
       <div class="well">
         <p>ADS</p>
